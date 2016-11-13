@@ -88,3 +88,18 @@ p {
 .rounded {
   border-radius: 1000px;
 }
+.buttons {
+  margin-top: 20px;
+}
+.button {
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 7px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+.button:hover {
+  background-color: white;
+  color: #555;
+}
