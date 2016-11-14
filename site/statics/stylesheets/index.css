@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Rajdhani:400,700');
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+  color: #555;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  font-family: 'Rajdhani', sans-serif;
+  margin: 0;
+}
+h1 {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  font-weight: 700;
+  font-size: 3.5em;
+  color: #0DC4D8;
+}
+h2 {
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  font-size: 2.6em;
+}
+h3 {
+  font-size: 2em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+h2,
+h3,
+h4,
+strong {
+  color: #333;
+}
+p {
+  font-size: 1.3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0;
+}
+.headerBlock {
+  background: linear-gradient(to top right, rgba(183, 83, 231, 0.63), rgba(24, 231, 229, 0.53)), url("../images/headerImage50.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  color: white;
+}
+.headerBlock object {
+  display: inline-block;
+  height: 240px;
+  vertical-align: top;
+  width: 240px;
+}
+.headerBlock h1,
+.headerBlock h2 {
+  color: white;
+}
+.block .content {
+  max-width: 50em;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2em;
+}
+#colour1 {
+  background-color: #0B3954;
+  color: white;
+}
+#colour1 h2,
+#colour1 h3 {
+  color: white;
+}
+.card {
+  border-bottom: solid 1px #d5d5d5;
+  background-color: #f4f4f4;
+  padding: 5px 20px;
+  margin: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  border: none;
+}
+.rounded {
+  border-radius: 1000px;
+}
+.buttons {
+  margin-top: 20px;
+}
+.button {
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 7px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+.button:hover {
+  background-color: white;
+  color: #555;
+}
