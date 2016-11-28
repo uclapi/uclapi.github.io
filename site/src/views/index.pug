@@ -3,9 +3,8 @@ include includes.pug
 -
   var features = { 
   'Room Bookings':'We are currently working on the room bookings API, initially allowing read access to expose data such as what rooms there are and when they are available before adding the ability to book rooms through the API as well.',
-  '3rd Party Authentication':'The goal with this is to make authenticating people using their UCL credentials much easier for 3rd party developers.',
-  'Maps':'There is already very detailed data about the location of most of the rooms in UCL. We want to make this data available so people can have better directions in their apps and services.',
-  'Moodle':'We want to make it much easier to access the data available on moodle such as grades, slides and notes.'
+  'Moodle':'We want to make it much easier to access the data available on moodle such as grades, slides and notes.',
+  'UCLU':'As well as working with ISD we want to make UCLU data more open as well to make all the services UCLU provide easier to use for individuals and societies'
   };
 
   var imageFolder = './images/';
@@ -39,17 +38,16 @@ include includes.pug
 
 html
   head
-    title API@UCL
+    title UCL API
     link(href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" rel="stylesheet")
     link(href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css" rel="stylesheet")
     link(href="./stylesheets/index.css" rel="stylesheet")
   body
     div(class="headerBlock")
       object(type="image/svg+xml" data="./images/uclapiWhite.svg")
-      h1 API@UCL
+      h1 UCL API
       h2 Creating a better university
       div(class="buttons")
-        a(class="button" href="docs.html") Get Started
         a(class="button" href="https://github.com/uclapi") Get Involved
     div(class="block" )
       div(class="content")
