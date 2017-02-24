@@ -1,18 +1,16 @@
 include includes.pug
 
 -
-  var features = { 
-  'Room Bookings':'We are currently working on the room bookings API, initially allowing read access to expose data such as what rooms there are and when they are available before adding the ability to book rooms through the API as well.',
-  'Moodle':'We want to make it much easier to access the data available on moodle such as grades, slides and notes.',
-  'UCLU':'As well as working with ISD we want to make UCLU data more open as well to make all the services UCLU provide easier to use for individuals and societies'
+  var features = {
+  'Room Bookings':'We\'re currently working super hard on launching and improving the room bookings service. With the room bookings service you can query for rooms, bookings, and equipment. 🏠'
   };
 
   var imageFolder = './images/';
   var team = [
     {
       name: 'Wilhelm Klopp',
-      role: 'Project Manager',
-      image: imageFolder + 'wil.jpg'
+      role: 'Product Manager',
+      image: imageFolder + 'wil.png'
     },
     {
       name: 'Henry Mortimer',
@@ -26,7 +24,7 @@ include includes.pug
     },
     {
       name: 'Jaromir Latal',
-      role: 'Senior Architect',
+      role: 'Senior Software Architect',
       image: imageFolder + 'jaro.jpg'
     },
     {
@@ -42,28 +40,30 @@ html
     link(href="https://yui-s.yahooapis.com/pure/0.6.0/pure-min.css" rel="stylesheet")
     link(href="https://yui-s.yahooapis.com/pure/0.6.0/grids-responsive-min.css" rel="stylesheet")
     link(href="./stylesheets/index.css" rel="stylesheet")
+    <style>.tcw:after { content: ""; display: block; margin-top: 25%; }</style>
   body
     div(class="headerBlock")
       object(type="image/svg+xml" data="./images/uclapiWhite.svg")
       h1 UCL API
-      h2 Creating a better university
+      h2 Building a better university
       div(class="buttons")
-        a(class="button" href="https://github.com/uclapi") Get Involved
+        a(class="button" href="/dashboard/") Get Started
+        a(class="button" href="https://docs.uclapi.com") Documentation
     div(class="block" )
       div(class="content")
         h2 Our Goal
-        p To create a ridiculously simple, documentation first API based around UCLs digital
-          services and to establish an eco system of third party apps and services that utilise
-          the API in ways we could never imagine, improving the lives of everyone at UCL for years to come. 
+        p Create a ridiculously simple, documentation first, and comprehensive API around UCL's digital services and establish an ecosystem of third party UCL apps and services that use the API.
+
     div(class="block" id="colour1")
       div(class="content")
         h2 Road Map
         each description, name in features
           +feature(name)
             p= description
+        p(class="roadmap-link")
+          a(href="https://trello.com/b/mimLkk3c/ucl-api-roadmap") The UCL API Roadmap is public. Check it out and vote ✅
     div(class="block")
       div(class="content")
         h2 The Team
         each member in team
           +teamMember(member.name, member.role, member.image)
-          
