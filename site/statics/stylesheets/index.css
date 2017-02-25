@@ -103,3 +103,15 @@ p {
   background-color: white;
   color: #555;
 }
+.roadmap-link a:link {
+  color: white;
+}
+.roadmap-link a:visited {
+  color: white;
+}
+.roadmap-link a:hover {
+  color: #b5b5b5;
+}
+.roadmap-link a:active {
+  color: white;
+}
